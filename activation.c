@@ -26,7 +26,7 @@ char *activation_get_harddisk_id() {
 }
 
 char *activation_get_interface_mac() {
-    return get_value("activation_get_interface_mac", "systemuuid");
+    return get_value("activation_get_interface_mac", "netmac");
 }
 
 char *activation_new_register_number() {
