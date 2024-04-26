@@ -97,8 +97,8 @@ modules:
       - mv etc/.kyact etc/lsb-release-ukui $FLATPAK_DEST/etc/
     sources:
       - type: file
-        url: https://archive2.kylinos.cn/deb/kylin/production/PART-openKylin/custom/partner/openKylin/pool/all/wechat-beta_1.0.0.238_amd64.deb
-        sha256: 912cfd30641ef376a680b05c6bdcb70cb3f154cb9eb6d0d3a57d23befe23b99c
+        url: https://archive2.kylinos.cn/deb/kylin/production/PART-V10-SP1/custom/partner/V10-SP1/pool/all/wechat-beta_1.0.0.241_amd64.deb
+        sha256: 4ffe0cda779b46ad5d76b85bdc65136c9c89add4d0bc1175a34d8b94f516c4fb
         dest-filename: wechat.deb
         x-checker-data:
           type: debian-repo
