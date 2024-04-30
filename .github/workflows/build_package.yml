@@ -6,6 +6,9 @@ on:
 jobs:
   build-bundle:
     runs-on: ubuntu-latest
+    strategy:
+      matrix:
+        architecture: [arm64]
     permissions:
       contents: write
 
