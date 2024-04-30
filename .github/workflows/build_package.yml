@@ -5,16 +5,14 @@ on:
 
 jobs:
   build-bundle:
-    runs-on: ubuntu-latest
+    runs-on: self-hosted
+    strategy:
+      matrix:
+        architecture: [ARM64]
     permissions:
       contents: write
 
     steps:
-      - name: Set up QEMU
-        uses: docker/setup-qemu-action@v3
-        with:
-          image: tonistiigi/binfmt:latest
-          platforms: arm64
       - name: Checkout
         uses: actions/checkout@v4
       - name: Install Flatpak
@@ -45,8 +43,8 @@ jobs:
         if: github.event_name == 'workflow_dispatch' && github.ref == 'refs/heads/main'
         uses: softprops/action-gh-release@v2
         with:
-          name: ${{ steps.date.outputs.CURRENT_DATE }}
-          tag_name: ${{ steps.date.outputs.CURRENT_DATE }}
+          name: '1.0.0.241'
+          tag_name: '1.0.0.241'
           files: com.tencent.WeChat.flatpak
           body:
             |
