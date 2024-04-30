@@ -43,8 +43,8 @@ jobs:
         if: github.event_name == 'workflow_dispatch' && github.ref == 'refs/heads/main'
         uses: softprops/action-gh-release@v2
         with:
-          name: '1.0.0.241'
-          tag_name: '1.0.0.241'
+          name: ${{ steps.date.outputs.CURRENT_DATE }}
+          tag_name: ${{ steps.date.outputs.CURRENT_DATE }}
           files: com.tencent.WeChat.flatpak
           body:
             |
