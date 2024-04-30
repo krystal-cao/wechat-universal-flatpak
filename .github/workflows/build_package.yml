@@ -5,7 +5,7 @@ on:
 
 jobs:
   build-bundle:
-    runs-on: ubunut-latest
+    runs-on: ubuntu-latest
     strategy:
       matrix:
         architecture: [ARM64]
