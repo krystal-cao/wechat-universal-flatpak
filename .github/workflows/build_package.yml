@@ -8,7 +8,7 @@ jobs:
     runs-on: ubuntu-latest
     strategy:
       matrix:
-        architecture: [arm64]
+        architecture: [ARM64]
     permissions:
       contents: write
 
