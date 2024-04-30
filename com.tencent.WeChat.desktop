@@ -1,5 +1,5 @@
 [Desktop Entry]
-Name=WeChat
+Name=微信
 Exec=wechat %U
 Terminal=false
 Type=Application
