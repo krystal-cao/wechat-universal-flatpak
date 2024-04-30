@@ -58,8 +58,8 @@ modules:
       - type: file
         path: activation.c
       - type: file
-        url: https://archive2.kylinos.cn/deb/kylin/production/PART-V10-SP1/custom/partner/V10-SP1/pool/all/wechat-beta_1.0.0.238_arm64.deb
-        sha256: 619cbaefcf64e68c8e98c8fb59d2916680075f4f3a9bb0e5379eb29859b940ab
+        url: https://archive2.kylinos.cn/deb/kylin/production/PART-openKylin/custom/partner/openKylin/pool/all/wechat-beta_1.0.0.238_amd64.deb
+        sha256: 912cfd30641ef376a680b05c6bdcb70cb3f154cb9eb6d0d3a57d23befe23b99c
         dest-filename: wechat.deb
         x-checker-data:
           type: debian-repo
